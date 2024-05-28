@@ -2,11 +2,12 @@ import mill._, scalalib._
 
 val spinalVersion = "1.10.1"
 
-object projectname extends SbtModule {
+object aia extends SbtModule {
+  def scalatestVersion = "3.2.14"
   def scalaVersion = "2.12.18"
   override def millSourcePath = os.pwd
   def sources = T.sources(
-    millSourcePath / "hw" / "spinal"
+    millSourcePath / "hw" / "src"
   )
   def ivyDeps = Agg(
     ivy"com.github.spinalhdl::spinalhdl-core:$spinalVersion",
