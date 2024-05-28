@@ -72,11 +72,8 @@ Of course you can replace/modify this file to help people with your own project!
 The [Mill build tool](https://com-lihaoyi.github.io/mill) can be installed and used instead of `sbt`.
 
 ```sh
-// To generate the Verilog from the example
-mill projectname.runMain projectname.MyTopLevelVerilog
-
-// To generate the VHDL from the example
-mill projectname.runMain projectname.MyTopLevelVhdl
+mill aia.runMain aia.IMSICVerilog
+mill aia.runMain aia.APlicVerilog
 
 // To run the testbench
 mill projectname.runMain projectname.MyTopLevelSim
